@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemobile.css">
+    <title>Portifólio | MATHEUS FERREIRA</title>
+</head>
+<body>
+    <header>
+        <section class="container--header">
+            <div class="nav--bar">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+                <div class="menu--hamburguer" onclick="ativaMenu()">
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                    <div class="linha"></div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="sobre" id="sobre">
+            <div class="container--sobre">
+                <h2 class="style-titles">Sobre</h2>
+                <div class="descricao">
+                    <div class="container--image--descricao">
+                        <div class="image--descricao">
+                            <img src="img/profile-pic 1.png" alt="foto do desenvolvedor">
+                        </div>
+                    </div>
+                    <div class="text--descricao">
+                        <p>Olá, me chamo Matheus, é um prazer ter você aqui, criei este portifólio para que eu consiga compartilhar os meus projetos, aprendizagens, e mostrar minha evolução nesse mundo da programação.
+                            É um caminho difícil, cheio de obstáculos, realmente não é fácil, mas a vontade de me tornar um desenvolvedor e trabalhar com isso é maior do que qualquer barreira.
+                            Atualmente curso Análise e Desenvolvimente de Sistemas em modelo de ensino EAD, mas meu foco é o estudo das tecnologias que mais são trabalhadas no momento principalmente na área do desenvolvimente Front-end, 
+                            falo de tecnologias como JavaScript e React, já aprendi muito de HTML e CSS, agora busco conhecimento na linguagem de programação em si, por enquanto os projetos são poucos, mas com o tempo de evolução nos estudos 
+                            logo logo esse portifólio estará lotado de projetos. Espero aprender muito e me consolidar na área, e para quem busca o mesmo objetivo eu desejo que tudo dê certo, sucesso a todos!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="habilidades" id="habilidades">
+            <div class="container--habilidades">
+                <h2 class="style-titles">Habilidades</h2>
+                <div class="container">
+                    <button onclick="removeBox()">X</button>
+                    <div class="cards--float">
+                        <h3 class="title" style="margin-bottom: 10px;"></h3>
+                        <img class="img" src="" alt="" style="margin-bottom: 10px;">
+                        <p class="text-habilidade"></p>
+                    </div>
+                </div>
+                <div class="box-cards">
+                    <div class="images--habilidades" onclick="floatBox(1)">
+                        <img src="img/file_type_html_icon_130541 1.svg" alt="">
+                    </div>
+                    <div class="images--habilidades" onclick="floatBox(2)">
+                        <img src="img/Group 8.svg" alt="">
+                    </div>
+                    <div class="images--habilidades" onclick="floatBox(3)">
+                        <img src="img/javascript_icon_130900 1.svg" alt="">
+                    </div>
+                    <div class="images--habilidades" onclick="floatBox(4)">
+                        <img src="img/Group 9.svg" alt="">
+                    </div>
+                    <div class="images--habilidades" onclick="floatBox(5)">
+                        <img src="img/Group 10.svg" alt="">
+                    </div>
+                </div>
+                <div class="box-cards cards-2">
+                    <div class="images--habilidades" onclick="floatBox(6)">
+                        <img src="img/Vector.svg" alt="">
+                    </div>
+                    <div class="images--habilidades" onclick="floatBox(7)">
+                        <img src="img/Group 11.svg" alt="">
+                    </div>
+                    <div class="images--habilidades" onclick="floatBox(8)">
+                        <img src="img/Group 12.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projetos" id="projetos">
+            <h2 class="style-titles">Projetos</h2>
+            <div class="container--projetos">   
+                <div class="cards--projetos">
+                    <div class="tela">
+                        <div class="image-projeto">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ8NDw0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNyg5LisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQMAB//EABgQAQEBAQEAAAAAAAAAAAAAAAABERIC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APIXOcDldi4CYsiukB2OkKRZAHFwsXADFw8XACR3LTHYAY7GnLuQDHctMdyDPExry7kGWOxpjuQZcuxpicgzxMaWJYDPHYeJgAh4lgDULEAXFUwESxXAquig7HYsi4DsWRZFkBJCxZFkBJFwpCwAnkpDnlZ5AOV5acryDPl3LXl3IM+XcteXcgy5dy15dyDLkeW3KXyDHlL5bXyl8gx5SxrfKWAywca3yNgM8HGuDYDOxMOxMAMTCxAHEJAWFHSLAdCkdCkB0hSOkOQEkKRZCkBJCwpCkAZ5KeSkOeQCeV5OQp5BnyvLTleQZcry15dyDLlOW3Kcgy5Tlryl8gx5G+W98pYDC+RvltYNgMbBsbWDYDGwbGtg2AysGxpYNgM6lPBoBUw7BoFCiQpAWQo6QpAWQpHSHIDpDkdIUgOkORZCkBJDkWeSkBJ5WeTkXAHFnk+VkBni8ni4DLl2NcTkGXKXy1xMBlfI2NbBsBjYNjawbAY2BY2sCwGNg2NbAsBlYNjSwKDOwa0sCwAsGw6IFCiQoBSFEhwChyDDgF5hyDGkBZDkSQ4CyFIkOQHSFjoUB2LIsi4CY7Cx2AOJh47ACwcaDQZ2DY1oWAzsCxrQoMrAsa+gsBlYFjWs6DOhY09BQZ2DToUAonRoLCgwoB+T8hDgNIcZ+WkA/JwIfkGkOBDgHCgwoBQ4MKAsVIQLHY5wOqKgIlWjQSwKdCgNCnQoBQp0KDOhWlCgzoU6FBnRp0KAUbCogsKBCgNIcZw/NBpD8s5TgNPLSMpTgNYcZSnKDU4ylKUGsWBKUoHKuhqyg0doauguutHU0CqWpqaDqFW0LQdaFW0bQG0KVoeqA+gq2haA+gpWhaA0KVCglGrR0HSlKEKUGkKVnKUoNZTlZSnKDWU5WMpyg2lOVjKUoNpTlYylPQNpSlYz0U9A11emXS9A112s+ndA01NDpOgaWjo9JfQFaNo2jfQLaNqX0N9A60LXWhaDrQtW0LQS0Kto2glC1bRtBKjqOg6FAiygcpShKsoNZSlZSlKDWU5WMpSg2lOVhKcoNp6KemMqz0DeellYz0U9A16Xpl07oG3TumXTuga9Ovpl07oGnSWs+kvoGlo30HQ30B30N9BfQ30BWjaloWgto2paNoLaNS0bQdaNq6NBw11cCSqLpQPVCFoHKsoSroNJSlZSloNZVlZSloNdKemMqyg2npZ6Yz0XQNel6Y9L0Dbp3THpega9J0y6d0DXpL6Z9JfQNOh6DpL6A7RtC1LQO0bRtG0CtG1NTQW0dTUtB2prkBya6uBHOcCrBUCXQXQOVdDV0DlXWcqyg01dZ6ug01emWroNOl6ZavQNOl6Za7QadO6Z9O0GnSdB0loHrug1NA9TQ11oFo6mpoLampqaC2pXWpoKia4HOc4HIrgc5zgdFc4FVHAsWOcDlc4HK5wOVzgc5zgciuBHOcDqjnA51RwI5zgRznAlRXAjnOBw1XA//9k=" alt="">
+                        </div>
+                        <div class="descricao--projeto">
+                            <p>Em breve...</p>
+                        </div>
+                    </div>
+                    <div class="acessar">
+                        <a href="#">Acessar</a>
+                    </div>
+                </div>
+                <div class="cards--projetos">
+                    <div class="tela">
+                        <div class="image-projeto">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ8NDw0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNyg5LisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQMAB//EABgQAQEBAQEAAAAAAAAAAAAAAAABERIC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APIXOcDldi4CYsiukB2OkKRZAHFwsXADFw8XACR3LTHYAY7GnLuQDHctMdyDPExry7kGWOxpjuQZcuxpicgzxMaWJYDPHYeJgAh4lgDULEAXFUwESxXAquig7HYsi4DsWRZFkBJCxZFkBJFwpCwAnkpDnlZ5AOV5acryDPl3LXl3IM+XcteXcgy5dy15dyDLkeW3KXyDHlL5bXyl8gx5SxrfKWAywca3yNgM8HGuDYDOxMOxMAMTCxAHEJAWFHSLAdCkdCkB0hSOkOQEkKRZCkBJCwpCkAZ5KeSkOeQCeV5OQp5BnyvLTleQZcry15dyDLlOW3Kcgy5Tlryl8gx5G+W98pYDC+RvltYNgMbBsbWDYDGwbGtg2AysGxpYNgM6lPBoBUw7BoFCiQpAWQo6QpAWQpHSHIDpDkdIUgOkORZCkBJDkWeSkBJ5WeTkXAHFnk+VkBni8ni4DLl2NcTkGXKXy1xMBlfI2NbBsBjYNjawbAY2BY2sCwGNg2NbAsBlYNjSwKDOwa0sCwAsGw6IFCiQoBSFEhwChyDDgF5hyDGkBZDkSQ4CyFIkOQHSFjoUB2LIsi4CY7Cx2AOJh47ACwcaDQZ2DY1oWAzsCxrQoMrAsa+gsBlYFjWs6DOhY09BQZ2DToUAonRoLCgwoB+T8hDgNIcZ+WkA/JwIfkGkOBDgHCgwoBQ4MKAsVIQLHY5wOqKgIlWjQSwKdCgNCnQoBQp0KDOhWlCgzoU6FBnRp0KAUbCogsKBCgNIcZw/NBpD8s5TgNPLSMpTgNYcZSnKDU4ylKUGsWBKUoHKuhqyg0doauguutHU0CqWpqaDqFW0LQdaFW0bQG0KVoeqA+gq2haA+gpWhaA0KVCglGrR0HSlKEKUGkKVnKUoNZTlZSnKDWU5WMpyg2lOVjKUoNpTlYylPQNpSlYz0U9A11emXS9A112s+ndA01NDpOgaWjo9JfQFaNo2jfQLaNqX0N9A60LXWhaDrQtW0LQS0Kto2glC1bRtBKjqOg6FAiygcpShKsoNZSlZSlKDWU5WMpSg2lOVhKcoNp6KemMqz0DeellYz0U9A16Xpl07oG3TumXTuga9Ovpl07oGnSWs+kvoGlo30HQ30B30N9BfQ30BWjaloWgto2paNoLaNS0bQdaNq6NBw11cCSqLpQPVCFoHKsoSroNJSlZSloNZVlZSloNdKemMqyg2npZ6Yz0XQNel6Y9L0Dbp3THpega9J0y6d0DXpL6Z9JfQNOh6DpL6A7RtC1LQO0bRtG0CtG1NTQW0dTUtB2prkBya6uBHOcCrBUCXQXQOVdDV0DlXWcqyg01dZ6ug01emWroNOl6ZavQNOl6Za7QadO6Z9O0GnSdB0loHrug1NA9TQ11oFo6mpoLampqaC2pXWpoKia4HOc4HIrgc5zgdFc4FVHAsWOcDlc4HK5wOVzgc5zgciuBHOcDqjnA51RwI5zgRznAlRXAjnOBw1XA//9k=" alt="">
+                        </div>
+                        <div class="descricao--projeto">
+                            <p>Em breve...</p>
+                        </div>
+                    </div>
+                    <div class="acessar">
+                        <a href="#">Acessar</a>
+                    </div>
+                </div>
+                <div class="cards--projetos">
+                    <div class="tela">
+                        <div class="image-projeto">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ8NDw0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNyg5LisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALEBHAMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAACAQMAB//EABgQAQEBAQEAAAAAAAAAAAAAAAABERIC/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/APIXOcDldi4CYsiukB2OkKRZAHFwsXADFw8XACR3LTHYAY7GnLuQDHctMdyDPExry7kGWOxpjuQZcuxpicgzxMaWJYDPHYeJgAh4lgDULEAXFUwESxXAquig7HYsi4DsWRZFkBJCxZFkBJFwpCwAnkpDnlZ5AOV5acryDPl3LXl3IM+XcteXcgy5dy15dyDLkeW3KXyDHlL5bXyl8gx5SxrfKWAywca3yNgM8HGuDYDOxMOxMAMTCxAHEJAWFHSLAdCkdCkB0hSOkOQEkKRZCkBJCwpCkAZ5KeSkOeQCeV5OQp5BnyvLTleQZcry15dyDLlOW3Kcgy5Tlryl8gx5G+W98pYDC+RvltYNgMbBsbWDYDGwbGtg2AysGxpYNgM6lPBoBUw7BoFCiQpAWQo6QpAWQpHSHIDpDkdIUgOkORZCkBJDkWeSkBJ5WeTkXAHFnk+VkBni8ni4DLl2NcTkGXKXy1xMBlfI2NbBsBjYNjawbAY2BY2sCwGNg2NbAsBlYNjSwKDOwa0sCwAsGw6IFCiQoBSFEhwChyDDgF5hyDGkBZDkSQ4CyFIkOQHSFjoUB2LIsi4CY7Cx2AOJh47ACwcaDQZ2DY1oWAzsCxrQoMrAsa+gsBlYFjWs6DOhY09BQZ2DToUAonRoLCgwoB+T8hDgNIcZ+WkA/JwIfkGkOBDgHCgwoBQ4MKAsVIQLHY5wOqKgIlWjQSwKdCgNCnQoBQp0KDOhWlCgzoU6FBnRp0KAUbCogsKBCgNIcZw/NBpD8s5TgNPLSMpTgNYcZSnKDU4ylKUGsWBKUoHKuhqyg0doauguutHU0CqWpqaDqFW0LQdaFW0bQG0KVoeqA+gq2haA+gpWhaA0KVCglGrR0HSlKEKUGkKVnKUoNZTlZSnKDWU5WMpyg2lOVjKUoNpTlYylPQNpSlYz0U9A11emXS9A112s+ndA01NDpOgaWjo9JfQFaNo2jfQLaNqX0N9A60LXWhaDrQtW0LQS0Kto2glC1bRtBKjqOg6FAiygcpShKsoNZSlZSlKDWU5WMpSg2lOVhKcoNp6KemMqz0DeellYz0U9A16Xpl07oG3TumXTuga9Ovpl07oGnSWs+kvoGlo30HQ30B30N9BfQ30BWjaloWgto2paNoLaNS0bQdaNq6NBw11cCSqLpQPVCFoHKsoSroNJSlZSloNZVlZSloNdKemMqyg2npZ6Yz0XQNel6Y9L0Dbp3THpega9J0y6d0DXpL6Z9JfQNOh6DpL6A7RtC1LQO0bRtG0CtG1NTQW0dTUtB2prkBya6uBHOcCrBUCXQXQOVdDV0DlXWcqyg01dZ6ug01emWroNOl6ZavQNOl6Za7QadO6Z9O0GnSdB0loHrug1NA9TQ11oFo6mpoLampqaC2pXWpoKia4HOc4HIrgc5zgdFc4FVHAsWOcDlc4HK5wOVzgc5zgciuBHOcDqjnA51RwI5zgRznAlRXAjnOBw1XA//9k=" alt="">
+                        </div>
+                        <div class="descricao--projeto">
+                            <p>Em breve...</p>
+                        </div>
+                    </div>
+                    <div class="acessar">
+                        <a href="#">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contatos">
+            <h2>Contatos</h2>
+            <div class="container--rede">
+                <div class="rede">
+                    <p>Instagram</p>
+                    <div class="img--rede"><a href="#"><img src="https://cdn.icon-icons.com/icons2/2037/PNG/512/ig_instagram_media_social_icon_124260.png" alt=""></a></div>
+                </div>
+                <div class="rede">
+                    <p>Linkedin</p>
+                    <div class="img--rede"><a href="#"><img src="https://cdn.icon-icons.com/icons2/2037/PNG/512/in_linked_linkedin_media_social_icon_124259.png" alt=""></a></div>
+                </div>
+                <div class="rede">
+                    <p>Git Hub</p>
+                    <div class="img--rede"><a href="#"><img src="https://cdn.icon-icons.com/icons2/793/PNG/512/github_icon-icons.com_65603.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="agradecimento">
+            <h2>Obrigado pela visita, volte sempre!😃</h2>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

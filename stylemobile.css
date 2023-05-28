@@ -1,0 +1,201 @@
+@media screen and (max-width: 350px){
+
+    .cards--float {
+        background-color: #fff;
+        font-size: 18px;
+        text-align: justify;
+        width: 90%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        z-index: 1000;
+        box-shadow: 100px 100px 200px 200px #0c213d8a;;
+    }
+
+    .cards--float .img {
+        width: 100px;
+    }
+
+    .container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        z-index: 100;
+    }
+    .container button{
+        margin-right: 0%;
+        margin-bottom: 0;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 50%;
+        padding: 10px;
+        border: 0;
+        font-weight: bold;
+    }
+    .container--header {
+        background-image: none;
+        height: min-content;
+    }
+    
+    .nav--bar {
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px;
+        align-items: center;
+        background-color: #FFCC00;
+    }
+    .menu--hamburguer {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        width: 20px;
+    }
+
+    .menu--hamburguer .linha {
+        height: 2px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: #0C213D;
+    }
+    
+    .nav--bar ul {
+        display: none;
+        position: absolute;
+        flex-direction: column;  
+        top: 50px;
+        right: 0;
+        width: 100%;
+        padding: 30px 30px;
+        background-color: #FFCC00;
+    }
+    .nav--bar ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: inherit;
+        border-bottom:1px solid #0C213D
+    }
+    .nav--bar ul li a {
+        color: #0C213D;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+
+    .style-titles {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .container--sobre h2 {
+        color:#FFCC00;
+    }
+    
+    .descricao{
+        display: block;
+    }
+    .descricao .container--image--descricao {
+        display: none;
+    }
+    .descricao .text--descricao p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: justify;
+    }
+    
+    .habilidades {
+        background-color: #FFCC00;
+    }
+    .container--habilidades {
+        padding: 30px ;
+        position:relative;
+    }
+    .container--habilidades h2 {
+        color: #0C213D;
+    }
+    
+    .box-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .images--habilidades {
+        cursor:pointer;
+        scale: .9;
+        transition: 0.5s;
+    }
+    .images--habilidades img{
+        width: 50px;
+    }
+    .images--habilidades:hover {
+        scale: 1;
+    }
+    
+    .cards-2 {
+        margin-top: 30px;
+    }
+    .projetos {
+        padding: 30px 0;
+    }
+    .container--projetos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .cards--projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .cards--projetos .tela {
+        border-radius: 10px;
+        width: 90%;
+    }
+    
+    .cards--projetos .image-projeto img {
+        width: 100%;
+    }
+
+
+    footer {
+        flex-direction: column;
+    }
+    
+    footer p {
+        font-size: 16px;       
+    }
+    
+    .contatos {
+        border-right: none;
+    }
+    
+    .agradecimento {
+        flex: 1;
+    }
+    
+    .agradecimento h2 {
+        text-align: center;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+}
