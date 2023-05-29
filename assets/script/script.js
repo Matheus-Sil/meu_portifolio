@@ -1,5 +1,14 @@
 let containerBox = document.querySelector('.container');
 
+window.onload = function() {
+    Particles.init({
+      selector: '.background',
+        maxParticles:200,
+        sizeVariations: 5,
+      connectParticles: false
+    });
+  };
+
 function floatBox(n) {
     let image = document.querySelector('.img');
     let text = document.querySelector('.text-habilidade');
@@ -10,7 +19,6 @@ function floatBox(n) {
 
     if(number == 1){
         title.innerHTML = "HTML";
-        image.src = './img/file_type_html_icon_130541 1.svg';
         text.innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptates quisquam, dolore suscipit laboriosam harum. Molestias aliquid ex eveniet recusandae, nemo in illum. Eius possimus harum eaque deserunt, aliquid error!";
     }else if(number == 2){
         title.innerHTML = "CSS";
@@ -62,5 +70,4 @@ function ativaMenu() {
     } else{
         menuHbg.style.display = 'none';
     }
-
 }
